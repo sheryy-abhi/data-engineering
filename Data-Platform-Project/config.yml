@@ -1,0 +1,42 @@
+---
+# Data Platform Config
+
+job: data-platform-creation
+dbname: my_sql_db_name
+version: 1.0
+bucket_name: 'bucket-name'
+prefix: 'data-lake'
+tables:
+    - tableA: 
+        type: 'static' 
+        filter1: 'created_at'
+        delimiter: '~'
+        select_all: True
+        json_flatten_flag: False
+    - tableB:
+        type: 'dynamic'
+        filter1: 'created_at'
+        filter2: 'updated_at'
+        delimiter: '~'
+        select_all: False
+        select_columns:
+          - 'a'
+          - 'b'
+          - 'c'
+          - 'd'
+        json_flatten_flag: True
+        flatten_columns:
+          - 'b'
+          - 'd'
+        json_flatten_level: 1
+    - tableC: 
+        type: 'static'
+        filter1: 'created_at'
+        delimiter: '|'
+        select_all: True
+        select_columns:
+          - 'a'
+          - 'b'
+          - 'c'
+          - 'd'
+        json_flatten_flag: False
