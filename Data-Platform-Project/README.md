@@ -92,3 +92,19 @@ interval parameter of DAG
 - Currently for Job scheduling we are using daily runs , we can bring that to more granular level . Some changes in Airflow DAG creation & SQL Query Builder will be required
 - We can use Apache Hudi to manage our Data Lake in a better way
 - For Transformation Python Pandas may not scale for bigger tables , so we can use Apache Spark for Big Data Computations
+
+
+```
+
+
+
+
+
+
+
+
+
+
+
+```
+#### Created By -  Abhisheak Gupta ,Senior Data Engineer 
