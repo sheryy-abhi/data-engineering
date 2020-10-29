@@ -2,7 +2,7 @@
 
 ## Hybrid Schema Model - Extension of Star Schema
 
-![ data model ](ERforDimetionalDataModel)
+![ data model ](ERforDimetionalDataModel.png)
 
 ### Dimention Table
 - Consumer Dimention
